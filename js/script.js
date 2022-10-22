@@ -16,21 +16,33 @@ buy.addEventListener("click", function(){
     let path = document.querySelector(".path").value;
     let kmPrice = parseFloat(path * 0.21);
     let age = document.querySelector(".age").value;
+    
 
     if (age == "Over60"){
         let finalPrice = kmPrice - (kmPrice * 0.40);
-        document.querySelector(".ticketprice").innerHTML = finalPrice.toFixed(2);
+        document.querySelector(".ticketprice").innerHTML = finalPrice.toFixed(2) + ("€");
         document.querySelector(".tickettype").innerHTML = ("Biglietto Anziani");
+        document.getElementById("carriage").innerHTML = Math.floor(Math.random() * 10) + 1;
+        const alphabet = "abcdefghijklmnopqrstuvwxyz"
+        const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
+        document.getElementById("ticketcode").innerHTML = randomCharacter + Math.floor(Math.random() * 10000);
 }
     else if(age == "Minorenne"){
         let finalPrice = kmPrice - (kmPrice * 0.20);
-        document.querySelector(".ticketprice").innerHTML = finalPrice.toFixed(2);
+        document.querySelector(".ticketprice").innerHTML = finalPrice.toFixed(2) + ("€");
         document.querySelector(".tickettype").innerHTML = ("Biglietto Giovani");
-        
+        document.getElementById("carriage").innerHTML = Math.floor(Math.random() * 10) + 1;
+        const alphabet = "abcdefghijklmnopqrstuvwxyz"
+        const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
+        document.getElementById("ticketcode").innerHTML = randomCharacter + Math.floor(Math.random() * 10000) ;
 }    
     else{
-        document.querySelector(".ticketprice").innerHTML = kmPrice.toFixed(2);
+        document.querySelector(".ticketprice").innerHTML = kmPrice.toFixed(2) + ("€");
         document.querySelector(".tickettype").innerHTML = ("Biglietto Standard");
+        document.getElementById("carriage").innerHTML = Math.floor(Math.random() * 10) + 1;
+        const alphabet = "abcdefghijklmnopqrstuvwxyz"
+        const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
+        document.getElementById("ticketcode").innerHTML = randomCharacter + Math.floor(Math.random() * 10000) ;
 }       
 })    
        

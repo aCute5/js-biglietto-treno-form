@@ -1,5 +1,5 @@
 body{
-    font-family: 'Freehand', cursive;
+    font-family: 'Roboto Mono', monospace;
     
 }
 a{
@@ -82,18 +82,29 @@ header{
      margin: .1rem;
 }
 .ticket{
-    
-     opacity: 0.6;
-     border-radius: 10px;
     color: #070604;
-     box-shadow: 2px 2px 1px 1px #252320;
-     padding: .3rem;
+    padding: .3rem;
      margin: .1rem;
+     
+}
+.ticket img{
+    width: 100%;
 }
 .first-part{
     background-image: url(../img/treno-a-vapore-vettore-logo-design-modello-squallido-timbro-o-icona-di-locomotive-f0mkn4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid black;
+    color: rgb(0, 0, 0);
+    
+       
+}
+.second-part{
+    background-image: url(../img/depositphotos_16992437-stock-illustration-elegant-damask-background-with-classical.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    
        
 }
