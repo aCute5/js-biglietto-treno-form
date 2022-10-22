@@ -1,43 +1,99 @@
 body{
-    background-image: url(../img/6813866-train-track-wallpaper.jpg);
-    background-repeat: no-repeat;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Freehand', cursive;
+    
+}
+a{
+    text-decoration: none;
 }
 nav{
-    height: 4rem;
+    height: 5rem;
     width: 100%;
+    background-image: url(../img/retro-train-antique-steam-locomotive-tender-vintage-car-black-silhouette-isolated-white-railway-transport-vector-art-227588409.jpg);
+    background-position: 50% 75%;
+    background-color:rgb(204, 197, 174); ;
+   /* background-size: contain; */
+    
+}
+nav .nav-link{
+    color: black;
 }    
 nav .container{
     width: 100%;
 }  
 
-nav img{
-    width: 10%;
+header{
+    background-image: url(../img/376607-sepik_1920x1200.jpg);
+    height: 60vh;
+    border-radius: 10px;
+    color: #070604;
+     box-shadow: 2px 2px 1px 1px #252320;
+    background-size: cover;
+    background-position: 25% 75%;
+    background-repeat: no-repeat ;
+    padding-top: 15rem;
 }
-.title{
-    
-}
-h1{
-    color: black;
-    background-color: rgba(161, 89, 49, 0.3)
-}
-.ticketname{
-    background-color: salmon;
-    width: 100px;
-    height: 400px;
+.cards{
+    background-color: rgb(182, 171, 134);
 }
 .card{
      /* border: 3px solid rgb(71, 18,18); */
      opacity: 0.6;
      border-radius: 10px;
-     background-color: #A55E34;
-     color: #070604;
-     box-shadow: 2px 2px 1px 1px #604F3C;
+    color: #070604;
+     box-shadow: 2px 2px 1px 1px #252320;
 }
 .card .btn{
-    background-color: #62503C;
+    background-color: #38342f;
     border: 2px solid black;
 }
 .card img{
     width: 100%;
+    height: 50%;
+}
+#inputGroup-sizing-sm{
+     /* border: 3px solid rgb(71, 18,18); */
+     opacity: 0.6;
+     border-radius: 10px;
+    color: #070604;
+     box-shadow: 2px 2px 1px 1px #1b1a18;
+}
+.buy{
+    opacity: 0.6;
+     border-radius: 10px;
+    color: #070604;
+     box-shadow: 2px 2px 2px 2px #252320;
+}
+.path{
+    border-radius: 10px;
+    color: #070604;
+     box-shadow: 2px 2px 2px 2px #252320;
+}
+.name{
+    border-radius: 10px;
+    color: #070604;
+     box-shadow: 2px 2px 1px 1px #252320;
+}
+#age{
+    opacity: 0.6;
+     border-radius: 10px;
+    color: #070604;
+     box-shadow: 2px 2px 1px 1px #252320;
+     padding: .3rem;
+     margin: .1rem;
+}
+.ticket{
+    
+     opacity: 0.6;
+     border-radius: 10px;
+    color: #070604;
+     box-shadow: 2px 2px 1px 1px #252320;
+     padding: .3rem;
+     margin: .1rem;
+}
+.first-part{
+    background-image: url(../img/treno-a-vapore-vettore-logo-design-modello-squallido-timbro-o-icona-di-locomotive-f0mkn4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+       
 }

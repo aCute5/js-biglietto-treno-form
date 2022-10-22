@@ -1,83 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biglietto del treno</title>
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet"> 
-    <!-- BOOSTRAMP CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biglietto del treno</title>
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">  
+  <!-- BOOSTRAMP CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
+
 <body>
-    <nav class="navbar bg-light">
-            <div class="container">
-                <img src="img/kisspng-logo-train-altoona-5b3d913aa9f2c3.6462209115307615306961.png">
-            </div>
-            
-            <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-      </nav>
-   
-    <div class="container md mt-5">
-        <div class="container">
-            <div class="row">
-                             
-                <div class="col-4" >
-                    <div class="card" style="width: 20rem;">
-                        <img src="img/VC_SacramentoRiverTrain_Supplied_SRT-Aerial1_1280x640.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="fw-bold">Panorami Mozzafiato</h5>
-                          <p class="card-title">Goditi il viaggio nella nostra confort class con un fantastico panorama</p>
-                          <a href="#" class="btn btn-primary">Le nostre mete</a>
-                        </div>
-                    </div>
-                </div>
-               <div class="col-4">
-                        
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- <img src="img/69006154-vettore-retrò-treno-logo-su-sfondo-bianco.webp" alt=""> -->
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Treni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Pacchetti Vacanza</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container-fluid">
+      <div class="row justify-content-start">
+        <div class="col-4">
+          <h1 class="text-white">Rivivi la storia delle ferrovie italiane</h1>
+          <p class="text-white">I nostri treni sono immersi nei paesaggi del panorama nel rispetto della natura e dell'ecologia</p>
         </div>
-        <div class="input-group input-group-sm mb-3">
+      </div>
+     
+    </div>
+  </header>
+  <section class="cards">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/365993-sepik.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="fw-bold">Modelli  Mozzafiato</h5>
+              <p class="card-title">Modelli d'epoca restaurati ma fedeli dell'epoca</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/corbelliniinternotranzitaliafoto.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="fw-bold">Business Class da urlo </h5>
+              <p class="card-title">Confort class mozzafiato</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/brisighella-ravenna-treno-vapore-pieve-tho-ritorno-ph.Andrea-Ceroni-tagliata.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="fw-bold">Percorsi storici</h5>
+              <p class="card-title">Ripercorri tutte le storiche tappe della vecchia ferrovia nella comodità e nella storia</p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+       <section class="acquista">
+        <div class="container mt-5">
+          <h1>Acquista il nostro bigletto online</h1>
+          <div class="input-group input-group-sm mb-3">
             <span class="input-group-text " id="inputGroup-sizing-sm">Nome e Cognome</span>
-            <input type="text" class="form-control name"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control name" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group input-group-sm mb-3">
             <span class="input-group-text" id="inputGroup-sizing-sm">NODI</span>
-            <input type="number" class="form-control path" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="number" class="form-control path" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group input-group-sm mb-3">
             <span class="input-group-text" id="inputGroup-sizing-sm">La tua età</span>
             <label for="cars"></label>
-                <select id="age" class="age" name="carlist" form="carform">
-                    <option value="Maggiorenne">Maggiorenne</option>
-                    <option value="Minorenne">Minorenne</option>
-                    <option value="Over60">Over60</option>
-                </select>
+            <select id="age" class="age" name="carlist" form="carform">
+              <option value="Maggiorenne">Maggiorenne</option>
+              <option value="Minorenne">Minorenne</option>
+              <option value="Over60">Over60</option>
+            </select>
           </div>
           <button class="btn-primary buy">Acquista</button>
-          <div class="ticketname"></div>
-          <div class="ticketprice"></div>
-          <div class="tickettype"></div>
-    </div>
-        
-    
+          <div class="container mt-5">
+            <div class="ticket">
+              <div class="row gy-5">
+                <div class="col-3 first-part">
+                  <h1 class="ticketname">
+                    Nome: 
+                  </h1>
+                  <h2 class="tickettype">
+                    Il tuo biglietto
+                  </h2>
+                  <h3 class="ticketprice">
+                    
+                  </h3>
+                </div>
+                <div class="col-7">
 
-    
+                </div>
+              </div>
+            </div>
+          </div>
+          
+         
+          
+        </div>
+       </section>
+      
+
+
+
 </body>
+
 </html>
