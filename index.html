@@ -13,6 +13,7 @@
   <!-- BOOSTRAMP CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- my javscript -->
   <script src="js/script.js" defer></script>
 </head>
 
@@ -31,7 +32,7 @@
             <a class="nav-link" href="#">Mete</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Pacchetti Vacanza</a>
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">PROMO</a>
           </li>
         </ul>
       </div>
@@ -43,7 +44,7 @@
       <div class="row justify-content-start">
         <div class="col-4">
           <h1 class="text-white">Rivivi la storia delle ferrovie italiane</h1>
-          <p class="text-white">I nostri treni sono immersi nei paesaggi del panorama nel rispetto della natura e dell'ecologia</p>
+         
         </div>
       </div>
      
@@ -51,34 +52,38 @@
   </header>
   <section class="cards">
     <div class="container p-5">
-      <div class="row">
-        <div class="col-4">
-          <div class="card" style="width: 20rem;">
+      <div class="row justify-content-around">
+        
+          <div class="card col-4 p-0" style="width: 20rem;">
             <img src="img/365993-sepik.jpg" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="fw-bold">Modelli  Mozzafiato</h5>
               <p class="card-title">Modelli d'epoca restaurati ma fedeli dell'epoca</p>
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="width: 20rem;">
-            <img src="img/corbelliniinternotranzitaliafoto.jpg" class="card-img-top" alt="">
+        
+      
+          <div class="card col-4 p-0" style="width: 20rem;">
             <div class="card-body">
               <h5 class="fw-bold">Business Class da urlo </h5>
+            </div>
+            
+            <img src="img/corbelliniinternotranzitaliafoto.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              
               <p class="card-title">Confort class mozzafiato</p>
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="width: 20rem;">
-            <img src="img/brisighella-ravenna-treno-vapore-pieve-tho-ritorno-ph.Andrea-Ceroni-tagliata.jpg" class="card-img-top" alt="">
-            <div class="card-body">
+        
+        
+          <div class="card col-4 p-0" style="width: 20rem;">
+           <div class="card-body">
               <h5 class="fw-bold">Percorsi storici</h5>
               <p class="card-title">Ripercorri tutte le storiche tappe della vecchia ferrovia nella comodità e nella storia</p>
            </div>
+           <img src="img/brisighella-ravenna-treno-vapore-pieve-tho-ritorno-ph.Andrea-Ceroni-tagliata.jpg" class="card-img-top" alt="">
           </div>
-        </div>
+        
       </div>
     </div>
     
@@ -106,6 +111,7 @@
             </select>
           </div>
           <button class="btn-primary buy">Acquista</button>
+          <p class="discount"> Vengono applicati sconti per giovani e Over-60. Il tuo biglietto avrà il timbro ufficiale delle ferrovie storiche nazionali. Il rimborso del biglietto viene effettuato solo per inadempienza della corsa dovuta a problemi strutturali. Per qualsiasi informazione leggi <span><a href="#!"> Termini a condizoni d'acquisto</a></span>.</p>
           <div class="container mt-5">
             <div class="ticket" >
               <div class="row gy-5">
@@ -123,11 +129,14 @@
                 <div class="col-7 second-part d-flex justify-content-around align-items-end">
                   <div class=" col-4 carrozza">
                     <img src="img/pngegg.png" alt="">
-                    <h5 class="text-center" id="carriage">Carrozza 7</h5>
+                    <h5 class="text-center" id="carriage"></h5>
                   </div>
                   <div class=" col-4">
-                    <img src="" alt="">
-                    <h5 class="text-center" id="ticketcode"></h5>
+                    <p class="discount">Il codice biglietto è univoco e utilizzabile soltanto dal nominativo nel biglietto e quindi non cedibile. L'assenza o la cessione del biglietto imbatte in sanzioni da parte dei controllori a bordo. Maggiori infomrazioni su <span><a href="#!">Termini di utilizzo</a> </span></p>
+                    <div id="qrcode">
+                      Codice biglietto da mostrare alla partenza:
+                    </div>
+                     <h5 class="text-center" id="ticketcode"></h5>
                   </div>
                 </div>
               </div>
