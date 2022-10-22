@@ -18,19 +18,19 @@ buy.addEventListener("click", function(){
     let age = document.querySelector(".age").value;
 
     if (age == "Over60"){
-        let finalPrice = kmPrice - (kmPrice * 0.4\0);
-        document.querySelector(".ticketprice").innerHTML = finalPrice.toFixed(2)
-        document.querySelector(".tickettype").innerHTML = ("Biglietto Anziani")
+        let finalPrice = kmPrice - (kmPrice * 0.40);
+        document.querySelector(".ticketprice").innerHTML = finalPrice.toFixed(2);
+        document.querySelector(".tickettype").innerHTML = ("Biglietto Anziani");
 }
     else if(age == "Minorenne"){
         let finalPrice = kmPrice - (kmPrice * 0.20);
-        document.querySelector(".ticketprice").innerHTML = finalPrice.toFixed(2)
-        document.querySelector(".tickettype").innerHTML = ("Biglietto Giovani")
+        document.querySelector(".ticketprice").innerHTML = finalPrice.toFixed(2);
+        document.querySelector(".tickettype").innerHTML = ("Biglietto Giovani");
         
 }    
     else{
-        document.querySelector(".ticketprice").innerHTML = kmPrice.toFixed(2)
-        document.querySelector(".tickettype").innerHTML = ("Biglietto Standard")
+        document.querySelector(".ticketprice").innerHTML = kmPrice.toFixed(2);
+        document.querySelector(".tickettype").innerHTML = ("Biglietto Standard");
 }       
 })    
        
