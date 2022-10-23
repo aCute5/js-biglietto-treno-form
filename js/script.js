@@ -21,9 +21,9 @@ buy.addEventListener("click", function(){
     if (age == "Over60"){
         let finalPrice = kmPrice - (kmPrice * 0.40);
         document.querySelector(".ticketprice").innerHTML = finalPrice.toFixed(2) + ("€");
-        document.querySelector(".tickettype").innerHTML = ("Biglietto Anziani");
+        document.querySelector(".tickettype").innerHTML = ("Biglietto OVER-60");
         document.getElementById("carriage").innerHTML = Math.floor(Math.random() * 10) + 1;
-        const alphabet = "abcdefghijklmnopqrstuvwxyz"
+        const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
         document.getElementById("ticketcode").innerHTML = randomCharacter + Math.floor(Math.random() * 10000);
 }
@@ -32,7 +32,7 @@ buy.addEventListener("click", function(){
         document.querySelector(".ticketprice").innerHTML = finalPrice.toFixed(2) + ("€");
         document.querySelector(".tickettype").innerHTML = ("Biglietto Giovani");
         document.getElementById("carriage").innerHTML = Math.floor(Math.random() * 10) + 1;
-        const alphabet = "abcdefghijklmnopqrstuvwxyz"
+        const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
         document.getElementById("ticketcode").innerHTML = randomCharacter + Math.floor(Math.random() * 10000) ;
 }    
@@ -40,7 +40,7 @@ buy.addEventListener("click", function(){
         document.querySelector(".ticketprice").innerHTML = kmPrice.toFixed(2) + ("€");
         document.querySelector(".tickettype").innerHTML = ("Biglietto Standard");
         document.getElementById("carriage").innerHTML = Math.floor(Math.random() * 10) + 1;
-        const alphabet = "abcdefghijklmnopqrstuvwxyz"
+        const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
         document.getElementById("ticketcode").innerHTML = randomCharacter + Math.floor(Math.random() * 10000) ;
 }       

@@ -52,9 +52,9 @@
   </header>
   <section class="cards">
     <div class="container p-5">
-      <div class="row justify-content-around">
+      <div class="row justify-content-evenly gx-5">
         
-          <div class="card col-4 p-0" style="width: 20rem;">
+          <div class="card col-3 p-0" style="width: 20rem;">
             <img src="img/365993-sepik.jpg" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="fw-bold">Modelli  Mozzafiato</h5>
@@ -63,7 +63,7 @@
           </div>
         
       
-          <div class="card col-4 p-0" style="width: 20rem;">
+          <div class="card col-3 p-0" style="width: 20rem;">
             <div class="card-body">
               <h5 class="fw-bold">Business Class da urlo </h5>
             </div>
@@ -76,7 +76,7 @@
           </div>
         
         
-          <div class="card col-4 p-0" style="width: 20rem;">
+          <div class="card col-3 p-0" style="width: 20rem;">
            <div class="card-body">
               <h5 class="fw-bold">Percorsi storici</h5>
               <p class="card-title">Ripercorri tutte le storiche tappe della vecchia ferrovia nella comodità e nella storia</p>
@@ -97,7 +97,7 @@
               aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-sm">NODI</span>
+            <span class="input-group-text" id="inputGroup-sizing-sm">KM</span>
             <input type="number" class="form-control path" aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-sm">
           </div>
@@ -128,13 +128,18 @@
                 </div>
                 <div class="col-7 second-part d-flex justify-content-around align-items-end">
                   <div class=" col-4 carrozza">
+                    
                     <img src="img/pngegg.png" alt="">
+                    <div id="qrcode">
+                      Carrozza
+                    </div>
                     <h5 class="text-center" id="carriage"></h5>
                   </div>
                   <div class=" col-4">
+                    <h5 class="red"> Biglietto univoco</h5>
                     <p class="discount">Il codice biglietto è univoco e utilizzabile soltanto dal nominativo nel biglietto e quindi non cedibile. L'assenza o la cessione del biglietto imbatte in sanzioni da parte dei controllori a bordo. Maggiori infomrazioni su <span><a href="#!">Termini di utilizzo</a> </span></p>
                     <div id="qrcode">
-                      Codice biglietto da mostrare alla partenza:
+                      Codice biglietto
                     </div>
                      <h5 class="text-center" id="ticketcode"></h5>
                   </div>

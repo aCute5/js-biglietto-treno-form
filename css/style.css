@@ -33,15 +33,50 @@ header{
     padding-top: 15rem;
 }
 .cards{
-    background-color: rgb(182, 171, 134);
+    background-color: rgba(230, 227, 220, 0.5);
+
 }
+/* .cards .row{
+    padding: 1rem;
+} */
 .card{
      /* border: 3px solid rgb(71, 18,18); */
-     opacity: 0.6;
+    opacity: 0.5;
      border-radius: 10px;
     color: #070604;
      box-shadow: 2px 2px 1px 1px #252320;
+     animation-fill-mode: forwards;
+     animation: mymove 2s linear 0.5s 1 normal forwards;
 }
+.card:hover{
+    transform: scale(1.1);
+    opacity: 1;
+
+}
+@keyframes mymove  {
+    0%{
+        opacity: 0.1;
+        left: 200px;
+    }
+    10%{
+        opacity: 0.2;
+        left: 150px;
+    }
+    15%{
+        opacity: 0.3;
+        left: 100px;
+    }
+    20%{
+        opacity: 0.4;
+        left: 50px;
+    }
+    30%{
+        opacity: 0.5;
+        left: 0px;
+    }
+   
+}
+
 .card .btn{
     background-color: #38342f;
     border: 2px solid black;
@@ -50,12 +85,21 @@ header{
     width: 100%;
     
 }
+.acquista{
+    background-image: url(../img/64134486-illustrazione-locomotiva-emblema-stile-vintage.webp);
+    background-size: 10%;
+    background-position: 0% 0%;
+    background-repeat: space;
+    
+}
 #inputGroup-sizing-sm{
      /* border: 3px solid rgb(71, 18,18); */
      opacity: 0.6;
      border-radius: 10px;
     color: #070604;
      box-shadow: 2px 2px 1px 1px #1b1a18;
+     background-color: #38342f;
+     color: white;
 }
 .buy{
     opacity: 0.6;
@@ -95,17 +139,21 @@ header{
 .ticket img{
     width: 100%;
 }
+.first-part .ticketname,.tickettype,.ticketprice{
+    opacity: 1;
+}
 .first-part{
     background-image: url(../img/treno-a-vapore-vettore-logo-design-modello-squallido-timbro-o-icona-di-locomotive-f0mkn4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid black;
     color: rgb(0, 0, 0);
-    
-       
+    opacity: 0.8;
+        
 }
+
 .second-part{
-    background-image: url(../img/depositphotos_16992437-stock-illustration-elegant-damask-background-with-classical.webp);
+    background-image: url(../img/360_F_247942785_koPDlEplbMkar34zs2OaM4QZyHdRYYI9.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid black;
@@ -117,9 +165,12 @@ header{
     border: 1px solid black;
    
 }
+.carrozza{
+    
+}
 #carriage{
-    border-top: 1px solid black;
+    border: 1px solid black;
 }
 #qrcode{
-    border-bottom: 1px solid black;
+    text-align: center;
 }         
