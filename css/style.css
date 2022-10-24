@@ -130,12 +130,18 @@ header{
     font-size: 10px;
     color: grey;
 }
+
 .ticket{
     color: #070604;
     padding: .3rem;
      margin: .1rem;
+    display: none;
      
 }
+.show{
+    display: block;
+}
+
 .ticket img{
     width: 100%;
 }

@@ -16,7 +16,9 @@ buy.addEventListener("click", function(){
     let path = document.querySelector(".path").value;
     let kmPrice = parseFloat(path * 0.21);
     let age = document.querySelector(".age").value;
-    
+    const eleTicket = document.querySelector(".ticket");
+    eleTicket.classList.toggle("show");
+
 
     if (age == "Over60"){
         let finalPrice = kmPrice - (kmPrice * 0.40);
@@ -35,14 +37,18 @@ buy.addEventListener("click", function(){
         const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
         document.getElementById("ticketcode").innerHTML = randomCharacter + Math.floor(Math.random() * 10000) ;
-}    
-    else{
+}
+    else if(age= "Maggiorenne"){
         document.querySelector(".ticketprice").innerHTML = kmPrice.toFixed(2) + ("€");
         document.querySelector(".tickettype").innerHTML = ("Biglietto Standard");
         document.getElementById("carriage").innerHTML = Math.floor(Math.random() * 10) + 1;
         const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
         document.getElementById("ticketcode").innerHTML = randomCharacter + Math.floor(Math.random() * 10000) ;
+
+}    
+    else{
+       console.log = "mettere Valori"
 }       
 })    
        
